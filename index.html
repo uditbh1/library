@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>My Library</h1>
+    <div class="container">
+        <h3>S.NO</h3>
+        <h3>TITLE</h3>
+        <h3>AUTHOR</h3>
+        <h3>PAGES</h3>
+        <h3>STATUS</h3>
+        <h3>REMOVEBOOK</h3>
+        
+    
+        <!-- <p id="serialno">1</p>
+        <p id="title">ABC</p>
+        <p id="author">DEFgfg</p>
+        <input type="number" id="pages" name="pages" min="0" />
+        <button id="statusbtn">read</button>
+        <button id="removebtn">remove</button>
+
+        <p id="serialno">1</p>
+        <p id="title">ABC</p>
+        <p id="author">DEF</p>
+        <input type="number" id="pages" name="pages" min="0" />
+        <button id="statusbtn">read</button>
+        <button id="removebtn">remove</button> -->
+        
+    </div>
+    <dialog id="dialog">
+        <form method="dialog">
+          <p>
+            <label>
+              Title:
+              <input id="title" type="text" required />
+            </label>
+          </p>
+          <p>
+            <label>
+              Author:
+              <input id="author" type="text" required />
+            </label>
+          </p>
+          <p>
+            <label>
+              Pages:
+              <input id="pages" type="number" min="0"/>
+            </label>
+          </p>
+          <p>
+            <label for="status">Read:</label>
+            <select id="status" name="status">
+                <option value="read">read</option>
+                <option value="notread">notread</option>
+            </select>
+          </p>
+          <div id="dialog-btns">
+            <input type="submit" id="confirm" value="confirm" />
+            <input type="submit" id="close" value="close" formnovalidate />
+          </div>
+        </form>
+    </dialog>
+    <button id="addBook">Add a Book</button>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
